@@ -1,0 +1,1442 @@
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/bg2il36c
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.4507, 'learning_rate': 5.408803162259998e-05, 'epoch': 1.0}                                        
+{'eval_loss': 0.2793463170528412, 'eval_accuracy': 0.9138321995464853, 'eval_runtime': 2.3476, 'eval_samples_per_second': 187.851, 'eval_steps_per_second': 23.854, 'epoch': 1.0}                                           
+{'loss': 0.3215, 'learning_rate': 4.0566023716949985e-05, 'epoch': 2.0}                                       
+{'eval_loss': 0.4502272605895996, 'eval_accuracy': 0.8934240362811792, 'eval_runtime': 2.3429, 'eval_samples_per_second': 188.231, 'eval_steps_per_second': 23.902, 'epoch': 2.0}                                           
+{'loss': 0.2105, 'learning_rate': 2.704401581129999e-05, 'epoch': 3.0}                                        
+{'eval_loss': 0.5681498050689697, 'eval_accuracy': 0.8707482993197279, 'eval_runtime': 2.4065, 'eval_samples_per_second': 183.255, 'eval_steps_per_second': 23.27, 'epoch': 3.0}                                            
+{'loss': 0.0949, 'learning_rate': 1.3522007905649995e-05, 'epoch': 4.0}                                       
+{'eval_loss': 0.5748462080955505, 'eval_accuracy': 0.8956916099773242, 'eval_runtime': 2.4414, 'eval_samples_per_second': 180.636, 'eval_steps_per_second': 22.938, 'epoch': 4.0}                                           
+{'loss': 0.0411, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.6924993395805359, 'eval_accuracy': 0.8888888888888888, 'eval_runtime': 2.3699, 'eval_samples_per_second': 186.081, 'eval_steps_per_second': 23.629, 'epoch': 5.0}                                           
+{'train_runtime': 365.427, 'train_samples_per_second': 54.265, 'train_steps_per_second': 6.787, 'train_loss': 0.22372903516215661, 'epoch': 5.0}                                                                            
+100%|█████████████████████████████████████████████████████████████████████| 2480/2480 [06:05<00:00,  6.79it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy █▅▁▅▄
+wandb:                      eval/loss ▁▄▆▆█
+wandb:                   eval/runtime ▁▁▆█▃
+wandb:        eval/samples_per_second ██▃▁▆
+wandb:          eval/steps_per_second ██▃▁▆
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▆▄▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.88889
+wandb:                      eval/loss 0.6925
+wandb:                   eval/runtime 2.3699
+wandb:        eval/samples_per_second 186.081
+wandb:          eval/steps_per_second 23.629
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 2480
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0411
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.22373
+wandb:            train/train_runtime 365.427
+wandb: train/train_samples_per_second 54.265
+wandb:   train/train_steps_per_second 6.787
+wandb: 
+wandb: 🚀 View run lively-sweep-1 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/bg2il36c
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_175809-bg2il36c/logs
+wandb: Agent Starting Run: tt4u4099 with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 0.0009700910453807948
+wandb: 	weight_decay: 0.001
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_180435-tt4u4099
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run smart-sweep-2
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/tt4u4099
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.7013, 'learning_rate': 0.0007760728363046358, 'epoch': 1.0}                                        
+{'eval_loss': 0.6601376533508301, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3208, 'eval_samples_per_second': 190.025, 'eval_steps_per_second': 24.13, 'epoch': 1.0}                                              
+{'loss': 0.6827, 'learning_rate': 0.0005820546272284769, 'epoch': 2.0}                                        
+{'eval_loss': 0.655377984046936, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3406, 'eval_samples_per_second': 188.412, 'eval_steps_per_second': 23.925, 'epoch': 2.0}                                              
+{'loss': 0.678, 'learning_rate': 0.0003880364181523179, 'epoch': 3.0}                                         
+{'eval_loss': 0.6575759053230286, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.2955, 'eval_samples_per_second': 192.114, 'eval_steps_per_second': 24.395, 'epoch': 3.0}                                             
+{'loss': 0.6766, 'learning_rate': 0.00019401820907615896, 'epoch': 4.0}                                       
+{'eval_loss': 0.6573019623756409, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.2893, 'eval_samples_per_second': 192.638, 'eval_steps_per_second': 24.462, 'epoch': 4.0}                                             
+{'loss': 0.6759, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.6594762802124023, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.2901, 'eval_samples_per_second': 192.569, 'eval_steps_per_second': 24.453, 'epoch': 5.0}                                             
+{'train_runtime': 333.8432, 'train_samples_per_second': 59.399, 'train_steps_per_second': 3.714, 'train_loss': 0.6828780389601184, 'epoch': 5.0}                                                                            
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:33<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: / 0.003 MB of 0.025 MB uploaded (0.000 MB deduped)
+wandb: Run history:
+wandb:                  eval/accuracy ▁▁▁▁▁
+wandb:                      eval/loss █▁▄▄▇
+wandb:                   eval/runtime ▅█▂▁▁
+wandb:        eval/samples_per_second ▄▁▇██
+wandb:          eval/steps_per_second ▄▁▇██
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▃▂▁▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.63719
+wandb:                      eval/loss 0.65948
+wandb:                   eval/runtime 2.2901
+wandb:        eval/samples_per_second 192.569
+wandb:          eval/steps_per_second 24.453
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.6759
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.68288
+wandb:            train/train_runtime 333.8432
+wandb: train/train_samples_per_second 59.399
+wandb:   train/train_steps_per_second 3.714
+wandb: 
+wandb: 🚀 View run smart-sweep-2 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/tt4u4099
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_180435-tt4u4099/logs
+wandb: Agent Starting Run: i0ih0mtf with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 1.3179437357014552e-05
+wandb: 	weight_decay: 0.1
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_181027-i0ih0mtf
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rich-sweep-3
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/i0ih0mtf
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.4025, 'learning_rate': 1.0543549885611643e-05, 'epoch': 1.0}                                       
+{'eval_loss': 0.3128306269645691, 'eval_accuracy': 0.8684807256235828, 'eval_runtime': 2.329, 'eval_samples_per_second': 189.351, 'eval_steps_per_second': 24.045, 'epoch': 1.0}                                            
+{'loss': 0.2278, 'learning_rate': 7.907662414208732e-06, 'epoch': 2.0}                                        
+{'eval_loss': 0.3206612169742584, 'eval_accuracy': 0.9024943310657596, 'eval_runtime': 2.3273, 'eval_samples_per_second': 189.492, 'eval_steps_per_second': 24.062, 'epoch': 2.0}                                           
+{'loss': 0.1463, 'learning_rate': 5.2717749428058214e-06, 'epoch': 3.0}                                       
+{'eval_loss': 0.4586561620235443, 'eval_accuracy': 0.8888888888888888, 'eval_runtime': 2.3264, 'eval_samples_per_second': 189.561, 'eval_steps_per_second': 24.071, 'epoch': 3.0}                                           
+{'loss': 0.0934, 'learning_rate': 2.6358874714029107e-06, 'epoch': 4.0}                                       
+{'eval_loss': 0.4870477318763733, 'eval_accuracy': 0.9024943310657596, 'eval_runtime': 2.3259, 'eval_samples_per_second': 189.601, 'eval_steps_per_second': 24.076, 'epoch': 4.0}                                           
+{'loss': 0.0563, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.4851274788379669, 'eval_accuracy': 0.8979591836734694, 'eval_runtime': 2.3305, 'eval_samples_per_second': 189.227, 'eval_steps_per_second': 24.029, 'epoch': 5.0}                                           
+{'train_runtime': 334.0244, 'train_samples_per_second': 59.367, 'train_steps_per_second': 3.712, 'train_loss': 0.18524635761014877, 'epoch': 5.0}                                                                           
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁█▅█▇
+wandb:                      eval/loss ▁▁▇██
+wandb:                   eval/runtime ▆▃▂▁█
+wandb:        eval/samples_per_second ▃▆▇█▁
+wandb:          eval/steps_per_second ▃▆▇█▁
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▄▃▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.89796
+wandb:                      eval/loss 0.48513
+wandb:                   eval/runtime 2.3305
+wandb:        eval/samples_per_second 189.227
+wandb:          eval/steps_per_second 24.029
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0563
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.18525
+wandb:            train/train_runtime 334.0244
+wandb: train/train_samples_per_second 59.367
+wandb:   train/train_steps_per_second 3.712
+wandb: 
+wandb: 🚀 View run rich-sweep-3 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/i0ih0mtf
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_181027-i0ih0mtf/logs
+wandb: Agent Starting Run: gzwsk266 with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 2.5112861838581664e-05
+wandb: 	weight_decay: 0.01
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_181617-gzwsk266
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run comfy-sweep-4
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/gzwsk266
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.3966, 'learning_rate': 2.0090289470865334e-05, 'epoch': 1.0}                                       
+{'eval_loss': 0.2887655198574066, 'eval_accuracy': 0.873015873015873, 'eval_runtime': 2.3274, 'eval_samples_per_second': 189.486, 'eval_steps_per_second': 24.062, 'epoch': 1.0}                                            
+{'loss': 0.214, 'learning_rate': 1.5067717103148997e-05, 'epoch': 2.0}                                        
+{'eval_loss': 0.3701522946357727, 'eval_accuracy': 0.8956916099773242, 'eval_runtime': 2.4078, 'eval_samples_per_second': 183.153, 'eval_steps_per_second': 23.258, 'epoch': 2.0}                                           
+{'loss': 0.1242, 'learning_rate': 1.0045144735432667e-05, 'epoch': 3.0}                                       
+{'eval_loss': 0.481627494096756, 'eval_accuracy': 0.9002267573696145, 'eval_runtime': 2.4432, 'eval_samples_per_second': 180.5, 'eval_steps_per_second': 22.921, 'epoch': 3.0}                                              
+{'loss': 0.0647, 'learning_rate': 5.0225723677163335e-06, 'epoch': 4.0}                                       
+{'eval_loss': 0.5381484031677246, 'eval_accuracy': 0.9047619047619048, 'eval_runtime': 2.3633, 'eval_samples_per_second': 186.602, 'eval_steps_per_second': 23.695, 'epoch': 4.0}                                           
+{'loss': 0.0273, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.5433241724967957, 'eval_accuracy': 0.909297052154195, 'eval_runtime': 2.3357, 'eval_samples_per_second': 188.81, 'eval_steps_per_second': 23.976, 'epoch': 5.0}                                             
+{'train_runtime': 336.6234, 'train_samples_per_second': 58.909, 'train_steps_per_second': 3.684, 'train_loss': 0.1653541018885951, 'epoch': 5.0}                                                                            
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:36<00:00,  3.68it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: / 0.011 MB of 0.025 MB uploaded (0.000 MB deduped)
+wandb: Run history:
+wandb:                  eval/accuracy ▁▅▆▇█
+wandb:                      eval/loss ▁▃▆██
+wandb:                   eval/runtime ▁▆█▃▂
+wandb:        eval/samples_per_second █▃▁▆▇
+wandb:          eval/steps_per_second █▃▁▆▇
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▅▃▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.9093
+wandb:                      eval/loss 0.54332
+wandb:                   eval/runtime 2.3357
+wandb:        eval/samples_per_second 188.81
+wandb:          eval/steps_per_second 23.976
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0273
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.16535
+wandb:            train/train_runtime 336.6234
+wandb: train/train_samples_per_second 58.909
+wandb:   train/train_steps_per_second 3.684
+wandb: 
+wandb: 🚀 View run comfy-sweep-4 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/gzwsk266
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_181617-gzwsk266/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: hvmsfstr with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 1.0142876970168002e-05
+wandb: 	weight_decay: 0.5
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_182220-hvmsfstr
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run warm-sweep-5
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/hvmsfstr
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.4217, 'learning_rate': 8.114301576134401e-06, 'epoch': 1.0}                                        
+{'eval_loss': 0.3331778645515442, 'eval_accuracy': 0.8707482993197279, 'eval_runtime': 2.3375, 'eval_samples_per_second': 188.667, 'eval_steps_per_second': 23.958, 'epoch': 1.0}                                           
+{'loss': 0.2391, 'learning_rate': 6.0857261821008015e-06, 'epoch': 2.0}                                       
+{'eval_loss': 0.33787935972213745, 'eval_accuracy': 0.8707482993197279, 'eval_runtime': 2.3324, 'eval_samples_per_second': 189.072, 'eval_steps_per_second': 24.009, 'epoch': 2.0}                                          
+{'loss': 0.1629, 'learning_rate': 4.057150788067201e-06, 'epoch': 3.0}                                        
+{'eval_loss': 0.45764806866645813, 'eval_accuracy': 0.8843537414965986, 'eval_runtime': 2.3335, 'eval_samples_per_second': 188.984, 'eval_steps_per_second': 23.998, 'epoch': 3.0}                                          
+{'loss': 0.1117, 'learning_rate': 2.0285753940336004e-06, 'epoch': 4.0}                                       
+{'eval_loss': 0.4683781862258911, 'eval_accuracy': 0.8888888888888888, 'eval_runtime': 2.3347, 'eval_samples_per_second': 188.886, 'eval_steps_per_second': 23.986, 'epoch': 4.0}                                           
+{'loss': 0.0721, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.4597882032394409, 'eval_accuracy': 0.8979591836734694, 'eval_runtime': 2.3348, 'eval_samples_per_second': 188.883, 'eval_steps_per_second': 23.985, 'epoch': 5.0}                                           
+{'train_runtime': 334.4366, 'train_samples_per_second': 59.294, 'train_steps_per_second': 3.708, 'train_loss': 0.20150528107920002, 'epoch': 5.0}                                                                           
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▁▅▆█
+wandb:                      eval/loss ▁▁▇██
+wandb:                   eval/runtime █▁▃▄▄
+wandb:        eval/samples_per_second ▁█▆▅▅
+wandb:          eval/steps_per_second ▁█▆▅▅
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▄▃▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.89796
+wandb:                      eval/loss 0.45979
+wandb:                   eval/runtime 2.3348
+wandb:        eval/samples_per_second 188.883
+wandb:          eval/steps_per_second 23.985
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0721
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.20151
+wandb:            train/train_runtime 334.4366
+wandb: train/train_samples_per_second 59.294
+wandb:   train/train_steps_per_second 3.708
+wandb: 
+wandb: 🚀 View run warm-sweep-5 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/hvmsfstr
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_182220-hvmsfstr/logs
+wandb: Agent Starting Run: cgc986cc with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 4.456488128742367e-05
+wandb: 	weight_decay: 0.001
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_182810-cgc986cc
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run comic-sweep-6
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/cgc986cc
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.3881, 'learning_rate': 3.565190502993894e-05, 'epoch': 1.0}                                        
+{'eval_loss': 0.29492324590682983, 'eval_accuracy': 0.8820861678004536, 'eval_runtime': 2.3399, 'eval_samples_per_second': 188.467, 'eval_steps_per_second': 23.932, 'epoch': 1.0}                                          
+{'loss': 0.2238, 'learning_rate': 2.67389287724542e-05, 'epoch': 2.0}                                         
+{'eval_loss': 0.3998928666114807, 'eval_accuracy': 0.9047619047619048, 'eval_runtime': 2.3354, 'eval_samples_per_second': 188.829, 'eval_steps_per_second': 23.978, 'epoch': 2.0}                                           
+{'loss': 0.128, 'learning_rate': 1.782595251496947e-05, 'epoch': 3.0}                                         
+{'eval_loss': 0.49792805314064026, 'eval_accuracy': 0.9047619047619048, 'eval_runtime': 2.3332, 'eval_samples_per_second': 189.014, 'eval_steps_per_second': 24.002, 'epoch': 3.0}                                          
+{'loss': 0.0501, 'learning_rate': 8.912976257484735e-06, 'epoch': 4.0}                                        
+{'eval_loss': 0.47431012988090515, 'eval_accuracy': 0.9183673469387755, 'eval_runtime': 2.3347, 'eval_samples_per_second': 188.886, 'eval_steps_per_second': 23.986, 'epoch': 4.0}                                          
+{'loss': 0.0184, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.5511569976806641, 'eval_accuracy': 0.9138321995464853, 'eval_runtime': 2.3394, 'eval_samples_per_second': 188.506, 'eval_steps_per_second': 23.937, 'epoch': 5.0}                                           
+{'train_runtime': 334.8332, 'train_samples_per_second': 59.224, 'train_steps_per_second': 3.703, 'train_loss': 0.1616504503834632, 'epoch': 5.0}                                                                            
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.70it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▅▅█▇
+wandb:                      eval/loss ▁▄▇▆█
+wandb:                   eval/runtime █▃▁▃▇
+wandb:        eval/samples_per_second ▁▆█▆▁
+wandb:          eval/steps_per_second ▁▆█▆▂
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▅▃▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.91383
+wandb:                      eval/loss 0.55116
+wandb:                   eval/runtime 2.3394
+wandb:        eval/samples_per_second 188.506
+wandb:          eval/steps_per_second 23.937
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0184
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.16165
+wandb:            train/train_runtime 334.8332
+wandb: train/train_samples_per_second 59.224
+wandb:   train/train_steps_per_second 3.703
+wandb: 
+wandb: 🚀 View run comic-sweep-6 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/cgc986cc
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_182810-cgc986cc/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: lkjd2qnd with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 5
+wandb: 	learning_rate: 3.537155951528872e-05
+wandb: 	weight_decay: 0.1
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_183411-lkjd2qnd
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run snowy-sweep-7
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/lkjd2qnd
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.4321, 'learning_rate': 2.8297247612230975e-05, 'epoch': 1.0}                                       
+{'eval_loss': 0.33267292380332947, 'eval_accuracy': 0.8820861678004536, 'eval_runtime': 2.3301, 'eval_samples_per_second': 189.263, 'eval_steps_per_second': 24.033, 'epoch': 1.0}                                          
+{'loss': 0.2572, 'learning_rate': 2.122293570917323e-05, 'epoch': 2.0}                                        
+{'eval_loss': 0.3777047097682953, 'eval_accuracy': 0.9160997732426304, 'eval_runtime': 2.3344, 'eval_samples_per_second': 188.913, 'eval_steps_per_second': 23.989, 'epoch': 2.0}                                           
+{'loss': 0.1578, 'learning_rate': 1.4148623806115488e-05, 'epoch': 3.0}                                       
+{'eval_loss': 0.5887102484703064, 'eval_accuracy': 0.8820861678004536, 'eval_runtime': 2.3356, 'eval_samples_per_second': 188.817, 'eval_steps_per_second': 23.977, 'epoch': 3.0}                                           
+{'loss': 0.0641, 'learning_rate': 7.074311903057744e-06, 'epoch': 4.0}                                        
+{'eval_loss': 0.49594998359680176, 'eval_accuracy': 0.9138321995464853, 'eval_runtime': 2.3362, 'eval_samples_per_second': 188.771, 'eval_steps_per_second': 23.971, 'epoch': 4.0}                                          
+{'loss': 0.0358, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.5006563663482666, 'eval_accuracy': 0.9160997732426304, 'eval_runtime': 2.331, 'eval_samples_per_second': 189.19, 'eval_steps_per_second': 24.024, 'epoch': 5.0}                                             
+{'train_runtime': 362.2133, 'train_samples_per_second': 54.747, 'train_steps_per_second': 6.847, 'train_loss': 0.18938241081853066, 'epoch': 5.0}                                                                           
+100%|█████████████████████████████████████████████████████████████████████| 2480/2480 [06:02<00:00,  6.85it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: / 0.020 MB of 0.025 MB uploaded (0.000 MB deduped)
+wandb: Run history:
+wandb:                  eval/accuracy ▁█▁██
+wandb:                      eval/loss ▁▂█▅▆
+wandb:                   eval/runtime ▁▆▇█▂
+wandb:        eval/samples_per_second █▃▂▁▇
+wandb:          eval/steps_per_second █▃▂▁▇
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▅▃▁▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.9161
+wandb:                      eval/loss 0.50066
+wandb:                   eval/runtime 2.331
+wandb:        eval/samples_per_second 189.19
+wandb:          eval/steps_per_second 24.024
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 2480
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0358
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.18938
+wandb:            train/train_runtime 362.2133
+wandb: train/train_samples_per_second 54.747
+wandb:   train/train_steps_per_second 6.847
+wandb: 
+wandb: 🚀 View run snowy-sweep-7 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/lkjd2qnd
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_183411-lkjd2qnd/logs
+wandb: Agent Starting Run: dj7s4gam with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 3.9365287197382074e-05
+wandb: 	weight_decay: 0.5
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_184034-dj7s4gam
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run pleasant-sweep-8
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/dj7s4gam
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.3794, 'learning_rate': 3.149222975790566e-05, 'epoch': 1.0}                                        
+{'eval_loss': 0.3198545277118683, 'eval_accuracy': 0.8843537414965986, 'eval_runtime': 2.3342, 'eval_samples_per_second': 188.926, 'eval_steps_per_second': 23.991, 'epoch': 1.0}                                           
+{'loss': 0.1903, 'learning_rate': 2.3619172318429242e-05, 'epoch': 2.0}                                       
+{'eval_loss': 0.40814560651779175, 'eval_accuracy': 0.891156462585034, 'eval_runtime': 2.3371, 'eval_samples_per_second': 188.694, 'eval_steps_per_second': 23.961, 'epoch': 2.0}                                           
+{'loss': 0.1161, 'learning_rate': 1.574611487895283e-05, 'epoch': 3.0}                                        
+{'eval_loss': 0.4590590000152588, 'eval_accuracy': 0.8934240362811792, 'eval_runtime': 2.3379, 'eval_samples_per_second': 188.635, 'eval_steps_per_second': 23.954, 'epoch': 3.0}                                           
+{'loss': 0.0505, 'learning_rate': 7.873057439476416e-06, 'epoch': 4.0}                                        
+{'eval_loss': 0.48729991912841797, 'eval_accuracy': 0.9047619047619048, 'eval_runtime': 2.3399, 'eval_samples_per_second': 188.469, 'eval_steps_per_second': 23.933, 'epoch': 4.0}                                          
+{'loss': 0.023, 'learning_rate': 0.0, 'epoch': 5.0}                                                           
+{'eval_loss': 0.5662720203399658, 'eval_accuracy': 0.9070294784580499, 'eval_runtime': 2.3389, 'eval_samples_per_second': 188.55, 'eval_steps_per_second': 23.943, 'epoch': 5.0}                                            
+{'train_runtime': 334.4497, 'train_samples_per_second': 59.291, 'train_steps_per_second': 3.708, 'train_loss': 0.15186334502312446, 'epoch': 5.0}                                                                           
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▃▄▇█
+wandb:                      eval/loss ▁▄▅▆█
+wandb:                   eval/runtime ▁▅▆█▇
+wandb:        eval/samples_per_second █▄▄▁▂
+wandb:          eval/steps_per_second █▄▄▁▂
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▄▃▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.90703
+wandb:                      eval/loss 0.56627
+wandb:                   eval/runtime 2.3389
+wandb:        eval/samples_per_second 188.55
+wandb:          eval/steps_per_second 23.943
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.023
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.15186
+wandb:            train/train_runtime 334.4497
+wandb: train/train_samples_per_second 59.291
+wandb:   train/train_steps_per_second 3.708
+wandb: 
+wandb: 🚀 View run pleasant-sweep-8 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/dj7s4gam
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_184034-dj7s4gam/logs
+wandb: Agent Starting Run: it6um08q with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 0.0005990588270580755
+wandb: 	weight_decay: 0.001
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_184632-it6um08q
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run jolly-sweep-9
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/it6um08q
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.6876, 'learning_rate': 0.0004792470616464604, 'epoch': 1.0}                                        
+{'eval_loss': 0.6603754162788391, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3099, 'eval_samples_per_second': 190.919, 'eval_steps_per_second': 24.244, 'epoch': 1.0}                                             
+{'loss': 0.6787, 'learning_rate': 0.0003594352962348453, 'epoch': 2.0}                                        
+{'eval_loss': 0.6554359793663025, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3057, 'eval_samples_per_second': 191.266, 'eval_steps_per_second': 24.288, 'epoch': 2.0}                                             
+{'loss': 0.6771, 'learning_rate': 0.0002396235308232302, 'epoch': 3.0}                                        
+{'eval_loss': 0.6585166454315186, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3169, 'eval_samples_per_second': 190.344, 'eval_steps_per_second': 24.171, 'epoch': 3.0}                                             
+{'loss': 0.6761, 'learning_rate': 0.0001198117654116151, 'epoch': 4.0}                                        
+{'eval_loss': 0.6576392650604248, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3148, 'eval_samples_per_second': 190.516, 'eval_steps_per_second': 24.193, 'epoch': 4.0}                                             
+{'loss': 0.6758, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.6592302918434143, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3155, 'eval_samples_per_second': 190.458, 'eval_steps_per_second': 24.185, 'epoch': 5.0}                                             
+{'train_runtime': 334.1592, 'train_samples_per_second': 59.343, 'train_steps_per_second': 3.711, 'train_loss': 0.6790417825022051, 'epoch': 5.0}                                                                            
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▁▁▁▁
+wandb:                      eval/loss █▁▅▄▆
+wandb:                   eval/runtime ▄▁█▇▇
+wandb:        eval/samples_per_second ▅█▁▂▂
+wandb:          eval/steps_per_second ▅█▁▂▂
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▃▂▁▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.63719
+wandb:                      eval/loss 0.65923
+wandb:                   eval/runtime 2.3155
+wandb:        eval/samples_per_second 190.458
+wandb:          eval/steps_per_second 24.185
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.6758
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.67904
+wandb:            train/train_runtime 334.1592
+wandb: train/train_samples_per_second 59.343
+wandb:   train/train_steps_per_second 3.711
+wandb: 
+wandb: 🚀 View run jolly-sweep-9 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/it6um08q
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_184632-it6um08q/logs
+wandb: Agent Starting Run: ayzpy427 with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 4.58931016274063e-05
+wandb: 	weight_decay: 0.01
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_185223-ayzpy427
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dashing-sweep-10
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/ayzpy427
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.3995, 'learning_rate': 3.671448130192505e-05, 'epoch': 1.0}                                        
+{'eval_loss': 0.31880658864974976, 'eval_accuracy': 0.873015873015873, 'eval_runtime': 2.3357, 'eval_samples_per_second': 188.812, 'eval_steps_per_second': 23.976, 'epoch': 1.0}                                           
+{'loss': 0.2207, 'learning_rate': 2.753586097644378e-05, 'epoch': 2.0}                                        
+{'eval_loss': 0.45302265882492065, 'eval_accuracy': 0.8820861678004536, 'eval_runtime': 2.3344, 'eval_samples_per_second': 188.914, 'eval_steps_per_second': 23.989, 'epoch': 2.0}                                          
+{'loss': 0.1222, 'learning_rate': 1.8357240650962523e-05, 'epoch': 3.0}                                       
+{'eval_loss': 0.4998558461666107, 'eval_accuracy': 0.8888888888888888, 'eval_runtime': 2.3379, 'eval_samples_per_second': 188.632, 'eval_steps_per_second': 23.953, 'epoch': 3.0}                                           
+{'loss': 0.0526, 'learning_rate': 9.178620325481262e-06, 'epoch': 4.0}                                        
+{'eval_loss': 0.4959430396556854, 'eval_accuracy': 0.9002267573696145, 'eval_runtime': 2.3412, 'eval_samples_per_second': 188.366, 'eval_steps_per_second': 23.92, 'epoch': 4.0}                                            
+{'loss': 0.0247, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.607603132724762, 'eval_accuracy': 0.9024943310657596, 'eval_runtime': 2.336, 'eval_samples_per_second': 188.785, 'eval_steps_per_second': 23.973, 'epoch': 5.0}                                             
+{'train_runtime': 331.7529, 'train_samples_per_second': 59.773, 'train_steps_per_second': 3.738, 'train_loss': 0.16393958060972152, 'epoch': 5.0}                                                                           
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:31<00:00,  3.74it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▃▅▇█
+wandb:                      eval/loss ▁▄▅▅█
+wandb:                   eval/runtime ▂▁▅█▃
+wandb:        eval/samples_per_second ▇█▄▁▆
+wandb:          eval/steps_per_second ▇█▄▁▆
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▅▃▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.90249
+wandb:                      eval/loss 0.6076
+wandb:                   eval/runtime 2.336
+wandb:        eval/samples_per_second 188.785
+wandb:          eval/steps_per_second 23.973
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0247
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.16394
+wandb:            train/train_runtime 331.7529
+wandb: train/train_samples_per_second 59.773
+wandb:   train/train_steps_per_second 3.738
+wandb: 
+wandb: 🚀 View run dashing-sweep-10 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/ayzpy427
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_185223-ayzpy427/logs
+wandb: Agent Starting Run: g63cumhc with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 2.164899466091255e-05
+wandb: 	weight_decay: 0.1
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_185814-g63cumhc
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run avid-sweep-11
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/g63cumhc
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.3876, 'learning_rate': 1.7319195728730042e-05, 'epoch': 1.0}                                       
+{'eval_loss': 0.31537291407585144, 'eval_accuracy': 0.8798185941043084, 'eval_runtime': 2.3349, 'eval_samples_per_second': 188.873, 'eval_steps_per_second': 23.984, 'epoch': 1.0}                                          
+{'loss': 0.2108, 'learning_rate': 1.298939679654753e-05, 'epoch': 2.0}                                        
+{'eval_loss': 0.36227649450302124, 'eval_accuracy': 0.8843537414965986, 'eval_runtime': 2.3375, 'eval_samples_per_second': 188.665, 'eval_steps_per_second': 23.957, 'epoch': 2.0}                                          
+{'loss': 0.1281, 'learning_rate': 8.659597864365021e-06, 'epoch': 3.0}                                        
+{'eval_loss': 0.3946724236011505, 'eval_accuracy': 0.9115646258503401, 'eval_runtime': 2.3391, 'eval_samples_per_second': 188.537, 'eval_steps_per_second': 23.941, 'epoch': 3.0}                                           
+{'loss': 0.062, 'learning_rate': 4.329798932182511e-06, 'epoch': 4.0}                                         
+{'eval_loss': 0.5272562503814697, 'eval_accuracy': 0.9024943310657596, 'eval_runtime': 2.3377, 'eval_samples_per_second': 188.648, 'eval_steps_per_second': 23.955, 'epoch': 4.0}                                           
+{'loss': 0.0304, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.4699600338935852, 'eval_accuracy': 0.9206349206349206, 'eval_runtime': 2.3356, 'eval_samples_per_second': 188.82, 'eval_steps_per_second': 23.977, 'epoch': 5.0}                                            
+{'train_runtime': 334.3969, 'train_samples_per_second': 59.301, 'train_steps_per_second': 3.708, 'train_loss': 0.16378174904854068, 'epoch': 5.0}                                                                           
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▂▆▅█
+wandb:                      eval/loss ▁▃▄█▆
+wandb:                   eval/runtime ▁▅█▆▂
+wandb:        eval/samples_per_second █▄▁▃▇
+wandb:          eval/steps_per_second █▄▁▃▇
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▅▃▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.92063
+wandb:                      eval/loss 0.46996
+wandb:                   eval/runtime 2.3356
+wandb:        eval/samples_per_second 188.82
+wandb:          eval/steps_per_second 23.977
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0304
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.16378
+wandb:            train/train_runtime 334.3969
+wandb: train/train_samples_per_second 59.301
+wandb:   train/train_steps_per_second 3.708
+wandb: 
+wandb: 🚀 View run avid-sweep-11 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/g63cumhc
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_185814-g63cumhc/logs
+wandb: Agent Starting Run: p73evosf with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 5
+wandb: 	learning_rate: 3.841430999561745e-05
+wandb: 	weight_decay: 0.5
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_190406-p73evosf
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run revived-sweep-12
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/p73evosf
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.4246, 'learning_rate': 3.073144799649396e-05, 'epoch': 1.0}                                        
+{'eval_loss': 0.2888125777244568, 'eval_accuracy': 0.9024943310657596, 'eval_runtime': 2.3379, 'eval_samples_per_second': 188.632, 'eval_steps_per_second': 23.953, 'epoch': 1.0}                                           
+{'loss': 0.2608, 'learning_rate': 2.3048585997370467e-05, 'epoch': 2.0}                                       
+{'eval_loss': 0.4899179935455322, 'eval_accuracy': 0.8798185941043084, 'eval_runtime': 2.3323, 'eval_samples_per_second': 189.08, 'eval_steps_per_second': 24.01, 'epoch': 2.0}                                             
+{'loss': 0.1506, 'learning_rate': 1.536572399824698e-05, 'epoch': 3.0}                                        
+{'eval_loss': 0.41902023553848267, 'eval_accuracy': 0.9070294784580499, 'eval_runtime': 2.3358, 'eval_samples_per_second': 188.803, 'eval_steps_per_second': 23.975, 'epoch': 3.0}                                          
+{'loss': 0.0693, 'learning_rate': 7.68286199912349e-06, 'epoch': 4.0}                                         
+{'eval_loss': 0.552142322063446, 'eval_accuracy': 0.9070294784580499, 'eval_runtime': 2.3356, 'eval_samples_per_second': 188.817, 'eval_steps_per_second': 23.977, 'epoch': 4.0}                                            
+{'loss': 0.0319, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.6267424821853638, 'eval_accuracy': 0.9047619047619048, 'eval_runtime': 2.3327, 'eval_samples_per_second': 189.049, 'eval_steps_per_second': 24.006, 'epoch': 5.0}                                           
+{'train_runtime': 362.5821, 'train_samples_per_second': 54.691, 'train_steps_per_second': 6.84, 'train_loss': 0.1874243394021065, 'epoch': 5.0}                                                                             
+100%|█████████████████████████████████████████████████████████████████████| 2480/2480 [06:02<00:00,  6.84it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▇▁██▇
+wandb:                      eval/loss ▁▅▄▆█
+wandb:                   eval/runtime █▁▅▅▂
+wandb:        eval/samples_per_second ▁█▄▄█
+wandb:          eval/steps_per_second ▁█▄▄█
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▅▃▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.90476
+wandb:                      eval/loss 0.62674
+wandb:                   eval/runtime 2.3327
+wandb:        eval/samples_per_second 189.049
+wandb:          eval/steps_per_second 24.006
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 2480
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0319
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.18742
+wandb:            train/train_runtime 362.5821
+wandb: train/train_samples_per_second 54.691
+wandb:   train/train_steps_per_second 6.84
+wandb: 
+wandb: 🚀 View run revived-sweep-12 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/p73evosf
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_190406-p73evosf/logs
+wandb: Agent Starting Run: ded8a7hf with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 0.000792070525904524
+wandb: 	weight_decay: 0.1
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_191029-ded8a7hf
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run hopeful-sweep-13
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/ded8a7hf
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.6935, 'learning_rate': 0.0006336564207236193, 'epoch': 1.0}                                        
+{'eval_loss': 0.6561605334281921, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3061, 'eval_samples_per_second': 191.232, 'eval_steps_per_second': 24.283, 'epoch': 1.0}                                             
+{'loss': 0.6809, 'learning_rate': 0.00047524231554271437, 'epoch': 2.0}                                       
+{'eval_loss': 0.6556497812271118, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3091, 'eval_samples_per_second': 190.98, 'eval_steps_per_second': 24.251, 'epoch': 2.0}                                              
+{'loss': 0.6773, 'learning_rate': 0.00031682821036180963, 'epoch': 3.0}                                       
+{'eval_loss': 0.6587588787078857, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3114, 'eval_samples_per_second': 190.796, 'eval_steps_per_second': 24.228, 'epoch': 3.0}                                             
+{'loss': 0.676, 'learning_rate': 0.00015841410518090482, 'epoch': 4.0}                                        
+{'eval_loss': 0.657764732837677, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3129, 'eval_samples_per_second': 190.671, 'eval_steps_per_second': 24.212, 'epoch': 4.0}                                              
+{'loss': 0.6757, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.6589763164520264, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3193, 'eval_samples_per_second': 190.148, 'eval_steps_per_second': 24.146, 'epoch': 5.0}                                             
+{'train_runtime': 334.3408, 'train_samples_per_second': 59.311, 'train_steps_per_second': 3.709, 'train_loss': 0.6806728609146611, 'epoch': 5.0}                                                                            
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▁▁▁▁
+wandb:                      eval/loss ▂▁█▅█
+wandb:                   eval/runtime ▁▃▄▅█
+wandb:        eval/samples_per_second █▆▅▄▁
+wandb:          eval/steps_per_second █▆▅▄▁
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▃▂▁▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.63719
+wandb:                      eval/loss 0.65898
+wandb:                   eval/runtime 2.3193
+wandb:        eval/samples_per_second 190.148
+wandb:          eval/steps_per_second 24.146
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.6757
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.68067
+wandb:            train/train_runtime 334.3408
+wandb: train/train_samples_per_second 59.311
+wandb:   train/train_steps_per_second 3.709
+wandb: 
+wandb: 🚀 View run hopeful-sweep-13 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/ded8a7hf
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_191029-ded8a7hf/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: rpaxd2yp with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 7.74451592426365e-05
+wandb: 	weight_decay: 0.001
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_191629-rpaxd2yp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run eager-sweep-14
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/rpaxd2yp
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.4075, 'learning_rate': 6.195612739410919e-05, 'epoch': 1.0}                                        
+{'eval_loss': 0.34105291962623596, 'eval_accuracy': 0.8684807256235828, 'eval_runtime': 2.3347, 'eval_samples_per_second': 188.886, 'eval_steps_per_second': 23.985, 'epoch': 1.0}                                          
+{'loss': 0.2408, 'learning_rate': 4.64670955455819e-05, 'epoch': 2.0}                                         
+{'eval_loss': 0.4444144666194916, 'eval_accuracy': 0.8616780045351474, 'eval_runtime': 2.3354, 'eval_samples_per_second': 188.83, 'eval_steps_per_second': 23.978, 'epoch': 2.0}                                            
+{'loss': 0.1499, 'learning_rate': 3.0978063697054596e-05, 'epoch': 3.0}                                       
+{'eval_loss': 0.4497407376766205, 'eval_accuracy': 0.8843537414965986, 'eval_runtime': 2.3348, 'eval_samples_per_second': 188.885, 'eval_steps_per_second': 23.985, 'epoch': 3.0}                                           
+{'loss': 0.0754, 'learning_rate': 1.5489031848527298e-05, 'epoch': 4.0}                                       
+{'eval_loss': 0.44117194414138794, 'eval_accuracy': 0.8843537414965986, 'eval_runtime': 2.3412, 'eval_samples_per_second': 188.368, 'eval_steps_per_second': 23.92, 'epoch': 4.0}                                           
+{'loss': 0.03, 'learning_rate': 0.0, 'epoch': 5.0}                                                            
+{'eval_loss': 0.5753777623176575, 'eval_accuracy': 0.891156462585034, 'eval_runtime': 2.3338, 'eval_samples_per_second': 188.964, 'eval_steps_per_second': 23.995, 'epoch': 5.0}                                            
+{'train_runtime': 334.028, 'train_samples_per_second': 59.366, 'train_steps_per_second': 3.712, 'train_loss': 0.18069931576328893, 'epoch': 5.0}                                                                            
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▃▁▆▆█
+wandb:                      eval/loss ▁▄▄▄█
+wandb:                   eval/runtime ▂▃▂█▁
+wandb:        eval/samples_per_second ▇▆▇▁█
+wandb:          eval/steps_per_second ▇▆▇▁█
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▅▃▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.89116
+wandb:                      eval/loss 0.57538
+wandb:                   eval/runtime 2.3338
+wandb:        eval/samples_per_second 188.964
+wandb:          eval/steps_per_second 23.995
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.03
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.1807
+wandb:            train/train_runtime 334.028
+wandb: train/train_samples_per_second 59.366
+wandb:   train/train_steps_per_second 3.712
+wandb: 
+wandb: 🚀 View run eager-sweep-14 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/rpaxd2yp
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_191629-rpaxd2yp/logs
+wandb: Agent Starting Run: a0gi9g11 with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 0.0006710977995799132
+wandb: 	weight_decay: 0.5
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_192223-a0gi9g11
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run clear-sweep-15
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/a0gi9g11
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.6888, 'learning_rate': 0.0005368782396639306, 'epoch': 1.0}                                        
+{'eval_loss': 0.6565396785736084, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3117, 'eval_samples_per_second': 190.769, 'eval_steps_per_second': 24.225, 'epoch': 1.0}                                             
+{'loss': 0.6797, 'learning_rate': 0.0004026586797479479, 'epoch': 2.0}                                        
+{'eval_loss': 0.656005859375, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3147, 'eval_samples_per_second': 190.521, 'eval_steps_per_second': 24.193, 'epoch': 2.0}                                                 
+{'loss': 0.6768, 'learning_rate': 0.0002684391198319653, 'epoch': 3.0}                                        
+{'eval_loss': 0.6580488085746765, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3152, 'eval_samples_per_second': 190.479, 'eval_steps_per_second': 24.188, 'epoch': 3.0}                                             
+{'loss': 0.676, 'learning_rate': 0.00013421955991598265, 'epoch': 4.0}                                        
+{'eval_loss': 0.6575334072113037, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3137, 'eval_samples_per_second': 190.603, 'eval_steps_per_second': 24.204, 'epoch': 4.0}                                             
+{'loss': 0.6756, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.6588165163993835, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3194, 'eval_samples_per_second': 190.133, 'eval_steps_per_second': 24.144, 'epoch': 5.0}                                             
+{'train_runtime': 334.0802, 'train_samples_per_second': 59.357, 'train_steps_per_second': 3.712, 'train_loss': 0.6793937683105469, 'epoch': 5.0}                                                                            
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▁▁▁▁
+wandb:                      eval/loss ▂▁▆▅█
+wandb:                   eval/runtime ▁▄▄▃█
+wandb:        eval/samples_per_second █▅▅▆▁
+wandb:          eval/steps_per_second █▅▅▆▁
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▃▂▁▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.63719
+wandb:                      eval/loss 0.65882
+wandb:                   eval/runtime 2.3194
+wandb:        eval/samples_per_second 190.133
+wandb:          eval/steps_per_second 24.144
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.6756
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.67939
+wandb:            train/train_runtime 334.0802
+wandb: train/train_samples_per_second 59.357
+wandb:   train/train_steps_per_second 3.712
+wandb: 
+wandb: 🚀 View run clear-sweep-15 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/a0gi9g11
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_192223-a0gi9g11/logs
+wandb: Agent Starting Run: hrzfg3sb with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 5
+wandb: 	learning_rate: 0.00013241820060610652
+wandb: 	weight_decay: 0.01
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_192817-hrzfg3sb
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lunar-sweep-16
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/hrzfg3sb
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.6802, 'learning_rate': 0.00010593456048488522, 'epoch': 1.0}                                       
+{'eval_loss': 0.6550242900848389, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3141, 'eval_samples_per_second': 190.57, 'eval_steps_per_second': 24.199, 'epoch': 1.0}                                              
+{'loss': 0.6836, 'learning_rate': 7.945092036366391e-05, 'epoch': 2.0}                                        
+{'eval_loss': 0.6552228331565857, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3084, 'eval_samples_per_second': 191.04, 'eval_steps_per_second': 24.259, 'epoch': 2.0}                                              
+{'loss': 0.6791, 'learning_rate': 5.296728024244261e-05, 'epoch': 3.0}                                        
+{'eval_loss': 0.6633267998695374, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3111, 'eval_samples_per_second': 190.814, 'eval_steps_per_second': 24.23, 'epoch': 3.0}                                              
+{'loss': 0.6766, 'learning_rate': 2.6483640121221305e-05, 'epoch': 4.0}                                       
+{'eval_loss': 0.6638056039810181, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3102, 'eval_samples_per_second': 190.896, 'eval_steps_per_second': 24.241, 'epoch': 4.0}                                             
+{'loss': 0.6714, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.6203843951225281, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3109, 'eval_samples_per_second': 190.836, 'eval_steps_per_second': 24.233, 'epoch': 5.0}                                             
+{'train_runtime': 362.0791, 'train_samples_per_second': 54.767, 'train_steps_per_second': 6.849, 'train_loss': 0.6781950304585118, 'epoch': 5.0}                                                                            
+100%|█████████████████████████████████████████████████████████████████████| 2480/2480 [06:02<00:00,  6.85it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▁▁▁▁
+wandb:                      eval/loss ▇▇██▁
+wandb:                   eval/runtime █▁▄▃▄
+wandb:        eval/samples_per_second ▁█▅▆▅
+wandb:          eval/steps_per_second ▁█▅▆▅
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss ▆█▅▄▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.63719
+wandb:                      eval/loss 0.62038
+wandb:                   eval/runtime 2.3109
+wandb:        eval/samples_per_second 190.836
+wandb:          eval/steps_per_second 24.233
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 2480
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.6714
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.6782
+wandb:            train/train_runtime 362.0791
+wandb: train/train_samples_per_second 54.767
+wandb:   train/train_steps_per_second 6.849
+wandb: 
+wandb: 🚀 View run lunar-sweep-16 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/hrzfg3sb
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_192817-hrzfg3sb/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: rv0ylzt0 with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 5
+wandb: 	learning_rate: 0.000205122411188554
+wandb: 	weight_decay: 0.01
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_193444-rv0ylzt0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dauntless-sweep-17
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/rv0ylzt0
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.6844, 'learning_rate': 0.0001640979289508432, 'epoch': 1.0}                                        
+{'eval_loss': 0.6558883786201477, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3218, 'eval_samples_per_second': 189.938, 'eval_steps_per_second': 24.119, 'epoch': 1.0}                                             
+{'loss': 0.6918, 'learning_rate': 0.0001230734467131324, 'epoch': 2.0}                                        
+{'eval_loss': 0.6559187769889832, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3183, 'eval_samples_per_second': 190.222, 'eval_steps_per_second': 24.155, 'epoch': 2.0}                                             
+{'loss': 0.6862, 'learning_rate': 8.20489644754216e-05, 'epoch': 3.0}                                         
+{'eval_loss': 0.6787656545639038, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3174, 'eval_samples_per_second': 190.296, 'eval_steps_per_second': 24.165, 'epoch': 3.0}                                             
+{'loss': 0.6833, 'learning_rate': 4.10244822377108e-05, 'epoch': 4.0}                                         
+{'eval_loss': 0.6596817970275879, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3219, 'eval_samples_per_second': 189.928, 'eval_steps_per_second': 24.118, 'epoch': 4.0}                                             
+{'loss': 0.6822, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.6575449109077454, 'eval_accuracy': 0.63718820861678, 'eval_runtime': 2.3217, 'eval_samples_per_second': 189.951, 'eval_steps_per_second': 24.121, 'epoch': 5.0}                                             
+{'train_runtime': 361.5347, 'train_samples_per_second': 54.85, 'train_steps_per_second': 6.86, 'train_loss': 0.6855596849995275, 'epoch': 5.0}                                                                              
+100%|█████████████████████████████████████████████████████████████████████| 2480/2480 [06:01<00:00,  6.86it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▁▁▁▁
+wandb:                      eval/loss ▁▁█▂▂
+wandb:                   eval/runtime █▂▁██
+wandb:        eval/samples_per_second ▁▇█▁▁
+wandb:          eval/steps_per_second ▁▇█▁▁
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss ▃█▄▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.63719
+wandb:                      eval/loss 0.65754
+wandb:                   eval/runtime 2.3217
+wandb:        eval/samples_per_second 189.951
+wandb:          eval/steps_per_second 24.121
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 2480
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.6822
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.68556
+wandb:            train/train_runtime 361.5347
+wandb: train/train_samples_per_second 54.85
+wandb:   train/train_steps_per_second 6.86
+wandb: 
+wandb: 🚀 View run dauntless-sweep-17 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/rv0ylzt0
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_193444-rv0ylzt0/logs
+wandb: Agent Starting Run: 9a84pong with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 3.598065708741987e-05
+wandb: 	weight_decay: 0.001
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_194103-9a84pong
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run floral-sweep-18
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/9a84pong
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.38, 'learning_rate': 2.87845256699359e-05, 'epoch': 1.0}                                           
+{'eval_loss': 0.36203306913375854, 'eval_accuracy': 0.8798185941043084, 'eval_runtime': 2.3349, 'eval_samples_per_second': 188.875, 'eval_steps_per_second': 23.984, 'epoch': 1.0}                                          
+{'loss': 0.2156, 'learning_rate': 2.1588394252451924e-05, 'epoch': 2.0}                                       
+{'eval_loss': 0.38580942153930664, 'eval_accuracy': 0.8888888888888888, 'eval_runtime': 2.3338, 'eval_samples_per_second': 188.959, 'eval_steps_per_second': 23.995, 'epoch': 2.0}                                          
+{'loss': 0.1123, 'learning_rate': 1.439226283496795e-05, 'epoch': 3.0}                                        
+{'eval_loss': 0.5843948721885681, 'eval_accuracy': 0.8752834467120182, 'eval_runtime': 2.3341, 'eval_samples_per_second': 188.938, 'eval_steps_per_second': 23.992, 'epoch': 3.0}                                           
+{'loss': 0.0415, 'learning_rate': 7.196131417483975e-06, 'epoch': 4.0}                                        
+{'eval_loss': 0.5415412187576294, 'eval_accuracy': 0.8979591836734694, 'eval_runtime': 2.3343, 'eval_samples_per_second': 188.923, 'eval_steps_per_second': 23.99, 'epoch': 4.0}                                            
+{'loss': 0.0181, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.586247444152832, 'eval_accuracy': 0.8979591836734694, 'eval_runtime': 2.3342, 'eval_samples_per_second': 188.932, 'eval_steps_per_second': 23.991, 'epoch': 5.0}                                            
+{'train_runtime': 334.4931, 'train_samples_per_second': 59.284, 'train_steps_per_second': 3.707, 'train_loss': 0.15351878750708794, 'epoch': 5.0}                                                                           
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▂▅▁██
+wandb:                      eval/loss ▁▂█▇█
+wandb:                   eval/runtime █▁▃▄▄
+wandb:        eval/samples_per_second ▁█▆▅▆
+wandb:          eval/steps_per_second ▁█▆▅▅
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▅▃▁▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.89796
+wandb:                      eval/loss 0.58625
+wandb:                   eval/runtime 2.3342
+wandb:        eval/samples_per_second 188.932
+wandb:          eval/steps_per_second 23.991
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0181
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.15352
+wandb:            train/train_runtime 334.4931
+wandb: train/train_samples_per_second 59.284
+wandb:   train/train_steps_per_second 3.707
+wandb: 
+wandb: 🚀 View run floral-sweep-18 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/9a84pong
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_194103-9a84pong/logs
+wandb: Agent Starting Run: 7wlup57c with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 5.11746107354866e-05
+wandb: 	weight_decay: 0.001
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_194656-7wlup57c
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run feasible-sweep-19
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/7wlup57c
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.4197, 'learning_rate': 4.093968858838928e-05, 'epoch': 1.0}                                        
+{'eval_loss': 0.31526491045951843, 'eval_accuracy': 0.8866213151927438, 'eval_runtime': 2.3318, 'eval_samples_per_second': 189.124, 'eval_steps_per_second': 24.016, 'epoch': 1.0}                                          
+{'loss': 0.2222, 'learning_rate': 3.070476644129196e-05, 'epoch': 2.0}                                        
+{'eval_loss': 0.37192296981811523, 'eval_accuracy': 0.8979591836734694, 'eval_runtime': 2.3308, 'eval_samples_per_second': 189.205, 'eval_steps_per_second': 24.026, 'epoch': 2.0}                                          
+{'loss': 0.1335, 'learning_rate': 2.046984429419464e-05, 'epoch': 3.0}                                        
+{'eval_loss': 0.4665311574935913, 'eval_accuracy': 0.9002267573696145, 'eval_runtime': 2.3364, 'eval_samples_per_second': 188.75, 'eval_steps_per_second': 23.968, 'epoch': 3.0}                                            
+{'loss': 0.0654, 'learning_rate': 1.023492214709732e-05, 'epoch': 4.0}                                        
+{'eval_loss': 0.41934889554977417, 'eval_accuracy': 0.9115646258503401, 'eval_runtime': 2.34, 'eval_samples_per_second': 188.458, 'eval_steps_per_second': 23.931, 'epoch': 4.0}                                            
+{'loss': 0.0327, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.47770440578460693, 'eval_accuracy': 0.9160997732426304, 'eval_runtime': 2.3407, 'eval_samples_per_second': 188.407, 'eval_steps_per_second': 23.925, 'epoch': 5.0}                                          
+{'train_runtime': 334.6175, 'train_samples_per_second': 59.262, 'train_steps_per_second': 3.706, 'train_loss': 0.17469021197288268, 'epoch': 5.0}                                                                           
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▄▄▇█
+wandb:                      eval/loss ▁▃█▅█
+wandb:                   eval/runtime ▂▁▅██
+wandb:        eval/samples_per_second ▇█▄▁▁
+wandb:          eval/steps_per_second ▇█▄▁▁
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▄▃▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.9161
+wandb:                      eval/loss 0.4777
+wandb:                   eval/runtime 2.3407
+wandb:        eval/samples_per_second 188.407
+wandb:          eval/steps_per_second 23.925
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0327
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.17469
+wandb:            train/train_runtime 334.6175
+wandb: train/train_samples_per_second 59.262
+wandb:   train/train_steps_per_second 3.706
+wandb: 
+wandb: 🚀 View run feasible-sweep-19 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/7wlup57c
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_194656-7wlup57c/logs
+wandb: Agent Starting Run: fbhcgot4 with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 5
+wandb: 	learning_rate: 6.144460809126299e-05
+wandb: 	weight_decay: 0.1
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_195249-fbhcgot4
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run royal-sweep-20
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/fbhcgot4
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at FPTAI/vibert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+{'loss': 0.3977, 'learning_rate': 4.9155686473010394e-05, 'epoch': 1.0}                                       
+{'eval_loss': 0.30132564902305603, 'eval_accuracy': 0.873015873015873, 'eval_runtime': 2.3395, 'eval_samples_per_second': 188.505, 'eval_steps_per_second': 23.937, 'epoch': 1.0}                                           
+{'loss': 0.2022, 'learning_rate': 3.686676485475779e-05, 'epoch': 2.0}                                        
+{'eval_loss': 0.3328365683555603, 'eval_accuracy': 0.8979591836734694, 'eval_runtime': 2.3302, 'eval_samples_per_second': 189.257, 'eval_steps_per_second': 24.033, 'epoch': 2.0}                                           
+{'loss': 0.0929, 'learning_rate': 2.4577843236505197e-05, 'epoch': 3.0}                                       
+{'eval_loss': 0.5629938244819641, 'eval_accuracy': 0.8888888888888888, 'eval_runtime': 2.3325, 'eval_samples_per_second': 189.065, 'eval_steps_per_second': 24.008, 'epoch': 3.0}                                           
+{'loss': 0.0466, 'learning_rate': 1.2288921618252598e-05, 'epoch': 4.0}                                       
+{'eval_loss': 0.5864787101745605, 'eval_accuracy': 0.8934240362811792, 'eval_runtime': 2.3324, 'eval_samples_per_second': 189.075, 'eval_steps_per_second': 24.01, 'epoch': 4.0}                                            
+{'loss': 0.0194, 'learning_rate': 0.0, 'epoch': 5.0}                                                          
+{'eval_loss': 0.5692704319953918, 'eval_accuracy': 0.909297052154195, 'eval_runtime': 2.3353, 'eval_samples_per_second': 188.841, 'eval_steps_per_second': 23.98, 'epoch': 5.0}                                             
+{'train_runtime': 334.6134, 'train_samples_per_second': 59.262, 'train_steps_per_second': 3.706, 'train_loss': 0.15175150902040543, 'epoch': 5.0}                                                                           
+100%|█████████████████████████████████████████████████████████████████████| 1240/1240 [05:34<00:00,  3.71it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▆▄▅█
+wandb:                      eval/loss ▁▂▇██
+wandb:                   eval/runtime █▁▃▃▅
+wandb:        eval/samples_per_second ▁█▆▆▄
+wandb:          eval/steps_per_second ▁█▆▆▄
+wandb:                    train/epoch ▁▁▃▃▅▅▆▆███
+wandb:              train/global_step ▁▁▃▃▅▅▆▆███
+wandb:            train/learning_rate █▆▅▃▁
+wandb:                     train/loss █▄▂▂▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.9093
+wandb:                      eval/loss 0.56927
+wandb:                   eval/runtime 2.3353
+wandb:        eval/samples_per_second 188.841
+wandb:          eval/steps_per_second 23.98
+wandb:                    train/epoch 5.0
+wandb:              train/global_step 1240
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.0194
+wandb:               train/total_flos 2608746113894400.0
+wandb:               train/train_loss 0.15175
+wandb:            train/train_runtime 334.6134
+wandb: train/train_samples_per_second 59.262
+wandb:   train/train_steps_per_second 3.706
+wandb: 
+wandb: 🚀 View run royal-sweep-20 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/fbhcgot4
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_195249-fbhcgot4/logs
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+wandb: WARNING Changes to your `wandb` environment variables will be ignored because your `wandb` session has already started. For more information on how to modify your settings with `wandb.init()` arguments, please refer to https://wandb.me/wandb-init.
+wandb: WARNING Ignored wandb.init() arg project when running a sweep.
+wandb: Tracking run with wandb version 0.15.8
+wandb: Run data is saved locally in /home/phuong/Documents/testML/wandb/run-20230807_195840-fbhcgot4
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run royal-sweep-20
+wandb: ⭐️ View project at https://wandb.ai/aphuongle95/seq-classification-sweeps
+wandb: 🧹 View sweep at https://wandb.ai/aphuongle95/seq-classification-sweeps/sweeps/l8ouv58c
+wandb: 🚀 View run at https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/fbhcgot4
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'weight_decay' was locked by 'sweep' (ignored update).
+  0%|                                                                                 | 0/744 [00:00<?, ?it/s]You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+{'loss': 0.4065, 'learning_rate': 1.3333333333333333e-05, 'epoch': 1.0}                                       
+{'eval_loss': 0.29486745595932007, 'eval_accuracy': 0.8707482993197279, 'eval_runtime': 2.2401, 'eval_samples_per_second': 196.867, 'eval_steps_per_second': 12.5, 'epoch': 1.0}                                            
+{'loss': 0.2071, 'learning_rate': 6.666666666666667e-06, 'epoch': 2.0}                                        
+{'eval_loss': 0.41043928265571594, 'eval_accuracy': 0.873015873015873, 'eval_runtime': 2.2415, 'eval_samples_per_second': 196.742, 'eval_steps_per_second': 12.492, 'epoch': 2.0}                                           
+{'loss': 0.1167, 'learning_rate': 0.0, 'epoch': 3.0}                                                          
+{'eval_loss': 0.4193720519542694, 'eval_accuracy': 0.8934240362811792, 'eval_runtime': 2.2416, 'eval_samples_per_second': 196.738, 'eval_steps_per_second': 12.491, 'epoch': 3.0}                                           
+{'train_runtime': 203.1774, 'train_samples_per_second': 58.56, 'train_steps_per_second': 3.662, 'train_loss': 0.2434128894600817, 'epoch': 3.0}                                                                             
+100%|███████████████████████████████████████████████████████████████████████| 744/744 [03:18<00:00,  3.74it/s]
+/home/phuong/miniconda3/envs/ml_env/lib/python3.10/site-packages/transformers/pipelines/text_classification.py:104: UserWarning: `return_all_scores` is now deprecated,  if want a similar functionality use `top_k=None` instead of `return_all_scores=True` or `top_k=1` instead of `return_all_scores=False`.
+  warnings.warn(
+Xformers is not installed correctly. If you want to use memory_efficient_attention to accelerate training use the following command to install Xformers
+pip install xformers.
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▂█
+wandb:                      eval/loss ▁▇█
+wandb:                   eval/runtime ▁██
+wandb:        eval/samples_per_second █▁▁
+wandb:          eval/steps_per_second █▂▁
+wandb:                    train/epoch ▁▁▅▅███
+wandb:              train/global_step ▁▁▅▅███
+wandb:            train/learning_rate █▅▁
+wandb:                     train/loss █▃▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.89342
+wandb:                      eval/loss 0.41937
+wandb:                   eval/runtime 2.2416
+wandb:        eval/samples_per_second 196.738
+wandb:          eval/steps_per_second 12.491
+wandb:                    train/epoch 3.0
+wandb:              train/global_step 744
+wandb:            train/learning_rate 0.0
+wandb:                     train/loss 0.1167
+wandb:               train/total_flos 1565247668336640.0
+wandb:               train/train_loss 0.24341
+wandb:            train/train_runtime 203.1774
+wandb: train/train_samples_per_second 58.56
+wandb:   train/train_steps_per_second 3.662
+wandb: 
+wandb: 🚀 View run royal-sweep-20 at: https://wandb.ai/aphuongle95/seq-classification-sweeps/runs/fbhcgot4
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230807_195840-fbhcgot4/logs

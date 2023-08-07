@@ -1,0 +1,9 @@
+.ipynb_checkpoints
+*sweeps
+results
+wandb
+model
+.vscode
+todo
+__pycache__
+output
