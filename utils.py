@@ -26,3 +26,4 @@ def process_data(dataset):
     dataset = dataset["train"]
 
     dataset = dataset.map(strip_text)
+    return dataset
