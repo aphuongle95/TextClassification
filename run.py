@@ -19,12 +19,13 @@ def main():
     parser.add_argument("--weight_decay", default=0.1)
     parser.add_argument("--num_epochs", default=5)
     parser.add_argument("--infer", default=False, action="store_true")
+    parser.add_argument("--text", required=False)
     args = parser.parse_args()
 
     if not args.infer:
         train(model_name=args.model_name, random_search=args.random_search)
     else:
-        infer(model_name=args.model_name)
+        infer(model_name=args.model_name, text=args.text)
 
 
 if __name__ == "__main__":

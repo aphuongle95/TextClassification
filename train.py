@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-
 from transformers import (
     AutoModelForSequenceClassification,
     AutoTokenizer,
@@ -14,7 +10,7 @@ from transformers import (
 from datasets import load_dataset, load_from_disk, load_metric
 import numpy as np
 
-from utils import strip_text, compute_metrics
+from utils import process_data, strip_text, compute_metrics
 
 
 def train_with_random_search(tokenized_dataset, model, tokenizer, model_name):
@@ -41,38 +37,37 @@ def train_with_random_search(tokenized_dataset, model, tokenizer, model_name):
             model_name, return_dict=True
         )
 
-    with wandb.init(config=config):
-        config = wandb.config
+    def wandb_train(config=None):
+        with wandb.init(config=config):
+            config = wandb.config
+            training_args = TrainingArguments(
+                output_dir="seq-classification-sweeps",
+                report_to="wandb",
+                num_train_epochs=config.epochs,
+                learning_rate=config.learning_rate,
+                weight_decay=config.weight_decay,
+                per_device_train_batch_size=config.batch_size,
+                per_device_eval_batch_size=8,
+                logging_strategy="epoch",
+                evaluation_strategy="epoch",
+                save_strategy="epoch",
+                load_best_model_at_end=True,
+                # remove_unused_columns=False,
+                # fp16=True
+            )
 
-        training_args = TrainingArguments(
-            output_dir="seq-classification-sweeps",
-            report_to="wandb",
-            num_train_epochs=config.epochs,
-            learning_rate=config.learning_rate,
-            weight_decay=config.weight_decay,
-            per_device_train_batch_size=config.batch_size,
-            per_device_eval_batch_size=8,
-            logging_strategy="epoch",
-            evaluation_strategy="epoch",
-            save_strategy="epoch",
-            load_best_model_at_end=True,
-            # remove_unused_columns=False,
-            # fp16=True
-        )
+            trainer = Trainer(
+                # model,
+                model_init=model_init,
+                args=training_args,
+                train_dataset=tokenized_dataset["train"],
+                eval_dataset=tokenized_dataset["test"],
+                compute_metrics=compute_metrics,
+            )
 
-        trainer = Trainer(
-            # model,
-            model_init=model_init,
-            args=training_args,
-            train_dataset=tokenized_dataset["train"],
-            eval_dataset=tokenized_dataset["test"],
-            compute_metrics=compute_metrics,
-        )
+            trainer.train()
 
-        # start training loop
-        trainer.train()
-
-    wandb.agent(sweep_id, train, count=20)
+    wandb.agent(sweep_id, wandb_train, count=20)
 
 
 def train_with_hyperparameters(tokenized_dataset, model, tokenizer, model_name):
@@ -110,15 +105,7 @@ def train(model_name: str, random_search: bool):
 
     dataset = load_dataset("csv", data_files={"negative_data.csv", "positive_data.csv"})
 
-    dataset.shuffle(seeds=20)
-
-    dataset = dataset.remove_columns("Rate")
-    dataset = dataset.rename_column("Review", "text")
-    dataset = dataset.rename_column("Label", "label")
-
-    dataset = dataset["train"]
-
-    dataset = dataset.map(strip_text)
+    dataset = process_data(dataset)
     dataset = dataset.train_test_split(test_size=0.1)
 
     tokenize_function = lambda examples: tokenizer(
