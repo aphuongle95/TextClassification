@@ -1,4 +1,2 @@
-This repo contains code to train a text classifier using huggingface. To find the best set of hyperparameters, it use sweeps from wandb to configure random search. 
-
-
-
+## Text Classifier Training with Huggingface and W&B ##
+This repository contains code for training a text classifier using the Huggingface library. It leverages the powerful tools from Weights & Biases (W&B) to find the optimal set of hyperparameters through a sophisticated random search mechanism.
